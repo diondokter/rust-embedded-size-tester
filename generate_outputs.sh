@@ -2,7 +2,7 @@
 
 opt_levels=("z" "3")
 rg_size_filter=".text|.rodata|section"
-rg_nm_filter=" t | r | T | R "
+rg_nm_filter=" t | r " # Local text and rodata
 
 mkdir -p outputs
 
