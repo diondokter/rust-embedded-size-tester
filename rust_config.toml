@@ -1,0 +1,17 @@
+# The minimal config.toml to compile the toolchain with
+
+profile = "library"
+change-id = 124501
+
+[build]
+target = ["thumbv7em-none-eabihf"]
+# --- Needed until optimize_for_size is available in nightly
+extended = true
+tools = [
+   "cargo",
+]
+# ---
+
+[rust]
+lld = true
+llvm-tools = true
