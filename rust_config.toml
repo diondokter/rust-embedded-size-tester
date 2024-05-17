@@ -4,7 +4,7 @@ profile = "library"
 change-id = 124501
 
 [build]
-target = ["thumbv7em-none-eabihf"]
+target = ["x86_64-unknown-linux-gnu", "thumbv7em-none-eabihf"]
 # --- Needed until optimize_for_size is available in nightly
 extended = true
 tools = [
